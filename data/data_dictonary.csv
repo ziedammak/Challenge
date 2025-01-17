@@ -1,0 +1,7 @@
+Column,Data type,Optional,Description
+Name,str,FALSE,The name of the location. This needs to be unique as having the same location name more than once leads to issues when using some Cozero features.
+Description,str,TRUE,Description of the location.
+Business Unit ID,int,FALSE,The ID of the business unit the location is assigned to.
+User ID,int,TRUE,The ID of the user who is responsible for the location.
+Address,str,FALSE,The address of the location. This will be geocoded. The result of the geocoding is returned in the attribute 'geolocation'.
+Tag,str,TRUE,"A tag to assign to the location. It's possible to assign several tags to one location, for simplicity we stick to a single tag per location in the example data though."
